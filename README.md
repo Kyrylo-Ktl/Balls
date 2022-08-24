@@ -2,6 +2,8 @@
 
 ### Mathematical apparatus
 
+![img](img/ball_representation.png)
+
 $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$
 
 $$n_{x}=\frac{x_{2}-x_{1}}{dist}$$

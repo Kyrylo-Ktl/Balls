@@ -1,6 +1,8 @@
-## Visualization of the mathematical model of perfectly elastic collision
+# Visualization of perfectly elastic collision
 
-### Mathematical apparatus
+## Mathematical apparatus
+
+### Representation
 
 The mathematical model is two-dimensional, so $x$ and $y$ coordinates are sufficient for representation.\
 \
@@ -10,8 +12,8 @@ In order for the ball to move in time with different speeds, it is also necessar
 \
 Also, the ball needs a radius $R$ and a certain mass $m$, which will be calculated by the formula $m=k*R$, where $k$ is an arbitrary coefficient equal to 10.\
 \
-![img](img/ball_representation.png)
-
+![img](img/ball_representation.png)\
+\
 ### Ball moving
 To move the ball, it is necessary to recalculate the coordinates and accelerations along the $x$ and $y$ axes in $t$ seconds using the following formulas:
 

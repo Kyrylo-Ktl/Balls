@@ -28,6 +28,8 @@ $$v_{y}=v_{y}*a_{y}$$
 
 ## Wall collision handling
 
+When colliding with a wall, to reflect the ball from it, it is enough to invert the direction of movement along the corresponding axis.
+
 ![img](img/wall_collision.png)
 
 $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$

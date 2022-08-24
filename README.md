@@ -8,14 +8,12 @@ In order to represent the movement of the ball on a plane, we will store the spe
 \
 In order for the ball to move in time with different speeds, it is also necessary to store the acceleration along the $x$ axis as $a_{x}$ and the $y$ axis as $a_{y}$, so the total acceleration is calculated by the formula $a=\sqrt{a_{x}^{2}+a_{y}^{2}}$.\
 \
-Also, the ball needs a radius $R$ and a certain mass $m$, which will be calculated by the formula $m=k*R$, where $k$ is an arbitrary coefficient equal to 10.
-
+Also, the ball needs a radius $R$ and a certain mass $m$, which will be calculated by the formula $m=k*R$, where $k$ is an arbitrary coefficient equal to 10.\
+\
 ![img](img/ball_representation.png)
 
 ### Ball moving
-
 To move the ball, it is necessary to recalculate the coordinates and accelerations along the $$x$$ and $$y$$ axes in $$t$$ seconds using the following formulas:
-
 
 $$x=x+v_{x}*t$$
 
@@ -23,7 +21,7 @@ $$y=y+v_{y}*t$$
 
 $$v_{x}=v_{x}*a_{x}$$
 
-$$v_{y}=v_{y}*a_{y}*t$$
+$$v_{y}=v_{y}*a_{y}$$
 
 
 $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$

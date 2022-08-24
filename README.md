@@ -13,7 +13,7 @@ Also, the ball needs a radius $R$ and a certain mass $m$, which will be calculat
 ![img](img/ball_representation.png)
 
 ### Ball moving
-To move the ball, it is necessary to recalculate the coordinates and accelerations along the $$x$$ and $$y$$ axes in $$t$$ seconds using the following formulas:
+To move the ball, it is necessary to recalculate the coordinates and accelerations along the $x$ and $y$ axes in $t$ seconds using the following formulas:
 
 $$x=x+v_{x}*t$$
 

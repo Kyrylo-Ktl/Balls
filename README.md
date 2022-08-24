@@ -2,6 +2,10 @@
 
 ### Mathematical apparatus
 
+The mathematical model is two-dimensional, so $$x$$ and $$y$$ coordinates are sufficient for representation.
+
+In order to represent the movement of the ball on a plane, we will store the speed along the $$x$$ axis and the $$y$$ axis, so the total speed is calculated by the formula $$v=\sqrt{v_{x}^{2}+v_{y}^{2}}$$.
+
 ![img](img/ball_representation.png)
 
 $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$

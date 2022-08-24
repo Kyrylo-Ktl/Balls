@@ -17,7 +17,6 @@ Also, the ball needs a radius $R$ and a certain mass $m$, which will be calculat
 ## Ball moving
 
 To move the ball, it is necessary to recalculate the coordinates and accelerations along the $x$ and $y$ axes in $t$ seconds using the following formulas:\
-\
 
 $$x=x+v_{x}*t$$
 
@@ -27,7 +26,9 @@ $$v_{x}=v_{x}*a_{x}$$
 
 $$v_{y}=v_{y}*a_{y}$$
 
-## Collision
+## Wall collision handling
+
+![img](img/wall_collision.png)
 
 $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$
 

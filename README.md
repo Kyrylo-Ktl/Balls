@@ -30,8 +30,7 @@ $$v_{y}=v_{y}*a_{y}$$
 
 When colliding with a wall, to reflect the ball from it, it is enough to invert the direction of movement along the corresponding axis:
 
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+```math SE = \frac{\sigma}{\sqrt{n}} ``` 
 
 ![img](img/wall_collision.png)
 

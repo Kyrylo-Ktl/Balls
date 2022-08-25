@@ -26,7 +26,7 @@ In order for the ball to move in time with different speeds, it is also necessar
 \
 Also, the ball needs a radius $R$ and a certain mass $m$, which will be calculated by the formula $m=k*R$, where $k$ is an arbitrary coefficient equal to 10.
 
-![img](img/ball_representation.png)
+![img](img/ball_representation.drawio.png)
 
 ## Ball moving
 
@@ -44,7 +44,7 @@ $$v_{y}=v_{y}*a_{y}$$
 
 When colliding with a wall, to reflect the ball from it, it is enough to invert the direction of movement along the corresponding axis:
 
-![img](img/wall_collision.png)
+![img](img/wall_collision.drawio.png)
 
 ## Balls collision
 
@@ -56,11 +56,11 @@ $$eps=10^{-3}$$
 
 $$dist+eps\leq R_{1}+R_{2}$$
 
-![img](img/overlap.png)
+![img](img/overlap.drawio.png)
 
 If the balls collided (an overlap was detected according to the formula above), then it is necessary to push the balls away from each other and recalculate the corresponding direction vectors and velocities.
 
-![img](img/ball_collision.png)
+![img](img/ball_collision.drawio.png)
 
 First you need to calculate the normals for the axes:
 

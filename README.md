@@ -36,10 +36,12 @@ When colliding with a wall, to reflect the ball from it, it is enough to invert 
 
 ## Balls collision
 
-To check whether it is necessary to handle a collision between the balls, it is necessary to estimate the distance between their centers and, if it is less than or equal to the sum of the radii, process the collision. To indicate the overlap of balls (collisions), the following formula is used:\
-\
+To check whether it is necessary to handle a collision between the balls, it is necessary to estimate the distance between their centers and, if it is less than or equal to the sum of the radii, process the collision. To indicate the overlap of balls (collisions), the following formula is used:
+
 $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$
+
 $$eps=10^{-3}$$
+
 $$dist+eps<R_{1}+R_{2}$$
 
 ![img](img/overlap.png)

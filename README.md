@@ -16,7 +16,7 @@ Also, the ball needs a radius $R$ and a certain mass $m$, which will be calculat
 
 ## Ball moving
 
-To move the ball, it is necessary to recalculate the coordinates and accelerations along the $x$ and $y$ axes in $t$ seconds using the following formulas:\
+To move the ball, it is necessary to recalculate the coordinates and accelerations along the $x$ and $y$ axes in $t$ seconds using the following formulas:
 
 $$x=x+v_{x}*t$$
 
@@ -28,7 +28,10 @@ $$v_{y}=v_{y}*a_{y}$$
 
 ## Wall collision handling
 
-When colliding with a wall, to reflect the ball from it, it is enough to invert the direction of movement along the corresponding axis.
+When colliding with a wall, to reflect the ball from it, it is enough to invert the direction of movement along the corresponding axis:
+
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 ![img](img/wall_collision.png)
 

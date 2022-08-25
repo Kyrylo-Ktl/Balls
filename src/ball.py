@@ -1,7 +1,6 @@
 """Module with ball math model"""
 
-from math import hypot
-from random import randint
+from math import hypot, pi
 
 from src.config import Config
 
@@ -18,7 +17,6 @@ class Ball:
         ax (float): x-acceleration or coefficient of change of vx per unit of time, strictly positive
         ay (float): y-acceleration or coefficient of change of vy per unit of time, strictly positive
         radius (float): ball radius value, strictly positive
-        mass (float): mass of the ball, strictly positive
     """
 
     def __init__(
@@ -31,7 +29,11 @@ class Ball:
         self.x, self.vx, self.ax = x, vx, ax
         self.y, self.vy, self.ay = y, vy, ay
         self.radius = radius
-        self.mass = 10.0 * radius
+
+    @property
+    def mass(self) -> float:
+        """Mass of the ball"""
+        return pi * self.radius ** 2
 
     def move(self, time: float = 1.0):
         """Recalculates changes in the coordinates of the center and velocities

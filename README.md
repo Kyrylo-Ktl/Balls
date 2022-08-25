@@ -1,8 +1,10 @@
 # Visualization of perfectly elastic collision
 
+The repository contains implementations of the mathematical apparatus and visualization of the absolutely elastic collision of balls with the exchange of kinetic energy in two-dimensional space.
+
 # Mathematical apparatus
 
-## Representation
+## Ball representation
 
 The mathematical model is two-dimensional, so $x$ and $y$ coordinates are sufficient for representation.\
 \
@@ -34,10 +36,15 @@ When colliding with a wall, to reflect the ball from it, it is enough to invert 
 
 ## Balls collision
 
-![img](img/ball_collision.png)
-
-
+To check whether it is necessary to handle a collision between the balls, it is necessary to estimate the distance between their centers and, if it is less than or equal to the sum of the radii, process the collision. To indicate the overlap of balls (collisions), the following formula is used:\
+\
 $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$
+$$eps=10^{-3}$$
+$$dist+eps<R_{1}+R_{2}$$
+
+![img](img/overlap.png)
+
+![img](img/ball_collision.png)
 
 $$n_{x}=\frac{x_{2}-x_{1}}{dist}$$
 

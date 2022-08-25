@@ -121,17 +121,18 @@ class Ball:
         b.vx = tx * second_dp_tan + nx * p2
         b.vy = ty * second_dp_tan + ny * p2
 
+        # Calculate balls overlap
         overlap = a.radius + b.radius - distance + Config.OVERLAP_EPS
-        if randint(0, 1) & 1:
-            a.x -= overlap * nx
-            a.y -= overlap * ny
-        else:
-            b.x += overlap * nx
-            b.y += overlap * ny
 
-        print(f'COLLISION: R1 - {a.radius:>5.2f}, '
-              f'R2 - {b.radius:>5.2f}, '
-              f'overlap - {overlap / (a.radius + b.radius) * 100:>5.2f}%')
+        # Calculate the ratio of radii
+        a_part = a.radius / (a.radius + b.radius)
+        b_part = b.radius / (a.radius + b.radius)
+
+        # Push balls away from each other
+        a.x -= overlap * a_part * nx
+        a.y -= overlap * a_part * ny
+        b.x += overlap * b_part * nx
+        b.y += overlap * b_part * ny
 
     @staticmethod
     def distance(a: 'Ball', b: 'Ball') -> float:

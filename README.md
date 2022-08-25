@@ -46,27 +46,41 @@ $$dist+eps\leq R_{1}+R_{2}$$
 
 ![img](img/overlap.png)
 
+If the balls collided (an overlap was detected according to the formula above), then it is necessary to push the balls away from each other and recalculate the corresponding direction vectors and velocities.
+
 ![img](img/ball_collision.png)
+
+First you need to calculate the normals for the axes:
 
 $$n_{x}=\frac{x_{2}-x_{1}}{dist}$$
 
 $$n_{x}=\frac{x_{1}-x_{2}}{dist}$$
 
+Then the tangents for the axes are calculated:
+
 $$tan_{x}=-n_{y}$$
 
 $$tan_{y}=n_{x}$$
+
+Next, the scalar product of the normals for each axis is calculated:
 
 $$dpn_{1}=v_{1x}*n_{x}+v_{1y}*n_{y}$$
 
 $$dpn_{2}=v_{2x}*n_{x}+v_{2y}*n_{y}$$
 
+Calculate momentum for each axis:
+
 $$p_{1} = \frac{dpn_{1} * (m_{1} - m_{2}) + 2*m_{2}*dpn_{2}}{m_{1}+m_{2}}$$
 
 $$p_{2} = \frac{dpn_{2} * (m_{2} - m_{1}) + 2*m_{1}*dpn_{1}}{m_{1}+m_{2}}$$
 
+We calculate the scalar product of tangents along the axes:
+
 $$dptan_{1}=v_{1x}*tan_{x}+v_{1y}*tan_{y}$$
 
 $$dptan_{2}=v_{2x}*tan_{x}+v_{2y}*tan_{y}$$
+
+And finally we recalculate the speeds for both balls along each axis:
 
 $$v_{1x}=tan_{x}*dptan_{1}+n_{x}*p_{1}$$
 

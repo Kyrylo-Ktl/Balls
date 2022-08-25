@@ -42,7 +42,7 @@ $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$
 
 $$eps=10^{-3}$$
 
-$$dist+eps<R_{1}+R_{2}$$
+$$dist+eps\leq R_{1}+R_{2}$$
 
 ![img](img/overlap.png)
 

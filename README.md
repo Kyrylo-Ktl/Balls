@@ -30,9 +30,12 @@ $$v_{y}=v_{y}*a_{y}$$
 
 When colliding with a wall, to reflect the ball from it, it is enough to invert the direction of movement along the corresponding axis:
 
-```math SE = \frac{\sigma}{\sqrt{n}} ``` 
-
 ![img](img/wall_collision.png)
+
+## Balls collision
+
+![img](img/ball_collision.png)
+
 
 $$dist=\sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}$$
 

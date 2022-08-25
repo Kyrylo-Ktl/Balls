@@ -89,3 +89,15 @@ $$v_{1y}=tan_{y}*dptan_{1}+n_{y}*p_{1}$$
 $$v_{2x}=tan_{x}*dptan_{2}+n_{x}*p_{2}$$
 
 $$v_{2y}=tan_{y}*dptan_{2}+n_{y}*p_{2}$$
+
+
+## Model setup
+
+-  ```WIDTH``` and ```HEIGHT``` - field dimensions in pixels;
+-  ```N_BALLS``` - the actual number of balls to be added (optimal value is from 0 to 100);
+-  ```BALL_MIN_X_SPEED``` and ```BALL_MAX_X_SPEED``` - minimum and maximum initial speed for the ball along the x-axis;
+- ```BALL_MIN_Y_SPEED``` and ```BALL_MAX_Y_SPEED``` - minimum and maximum initial speed for the ball along the y-axis;
+- ```BALL_MIN_RADIUS``` and ```BALL_MAX_RADIUS``` - minimum and maximum ball radius (I recommend no more than 5% of the field size);
+- ```BALL_X_ACCELERATION``` and ```BALL_Y_ACCELERATION``` - initial acceleration along the axes, if **less than 1** then the balls will **slow down** and the system will **lose** energy, if **more than 1** then the balls will **accelerate** and the system will **increase** energy and if **equal to 1** then the balls will move at a **constant speed** and the energy of the entire system will be **unchanged**;
+- ```HANDLE_COLLISIONS``` - a boolean indicating that collisions should be handled, when set to ```False``` the balls will fly through each other;
+- ```FPS``` - the number of frames per second, optimally 120, but depends on the performance of the hardware.

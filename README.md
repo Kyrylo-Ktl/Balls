@@ -2,6 +2,10 @@
 
 The repository contains implementations of the mathematical apparatus and visualization of the absolutely elastic collision of balls with the exchange of kinetic energy in two-dimensional space.
 
+# Running
+
+- ```pip install -r requirements.txt``` - install all needed dependencies running
+- ```python run.py``` - run visualization 
 
 # Model setup
 

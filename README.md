@@ -115,3 +115,24 @@ $$v_{1y}=tan_{y}*dptan_{1}+n_{y}*p_{1}$$
 $$v_{2x}=tan_{x}*dptan_{2}+n_{x}*p_{2}$$
 
 $$v_{2y}=tan_{y}*dptan_{2}+n_{y}*p_{2}$$
+
+## Energy of the whole system
+
+The kinetic energy of each ball is calculated by the following formula:
+
+$$v=\sqrt{v_{x}^2 + v_{y}^2}$$
+
+$$E=m*v^2$$
+
+The total energy of the system is calculated as the sum of the energies of all its balls:
+
+$$totalE = \sum_{i}^{n}E_{i}$$
+
+### System saving energy
+
+
+### System losing energy
+
+
+### System gaining energy
+

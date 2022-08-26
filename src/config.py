@@ -5,9 +5,9 @@ class Config:
     """"""
 
     WIDTH = 1000
-    HEIGHT = 600
+    HEIGHT = 650
 
-    N_BALLS = 15
+    N_BALLS = 5
 
     BALL_MIN_X_COORD = 0
     BALL_MAX_X_COORD = WIDTH
@@ -16,16 +16,16 @@ class Config:
     BALL_MAX_Y_COORD = HEIGHT
 
     BALL_MIN_X_SPEED = 0
-    BALL_MAX_X_SPEED = 3
+    BALL_MAX_X_SPEED = 4
 
     BALL_MIN_Y_SPEED = 0
-    BALL_MAX_Y_SPEED = 3
+    BALL_MAX_Y_SPEED = 4
 
-    BALL_MIN_RADIUS = 20
-    BALL_MAX_RADIUS = 35
+    BALL_MIN_RADIUS = 45
+    BALL_MAX_RADIUS = 45
 
-    BALL_X_ACCELERATION = 1 - 1e-5
-    BALL_Y_ACCELERATION = 1 - 1e-5
+    BALL_X_ACCELERATION = 1 - 1e-6
+    BALL_Y_ACCELERATION = 1 - 1e-6
 
     TIME_PER_DRAW = 1.0
     OVERLAP_EPS = 1e-3

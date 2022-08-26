@@ -9,7 +9,13 @@ The repository contains implementations of the mathematical apparatus and visual
 
 # Examples
 
+https://user-images.githubusercontent.com/93226646/186855664-c90cfcb9-bdb0-4fff-8c15-9552903f2e2c.mp4
 
+https://user-images.githubusercontent.com/93226646/186855692-e82ff61b-871c-4ac2-b000-42fadb202c45.mp4
+
+https://user-images.githubusercontent.com/93226646/186855790-e29e69ea-7aee-43ea-86f8-f251c4b8ee8a.mp4
+
+https://user-images.githubusercontent.com/93226646/186855806-d5bc63f3-cf0f-42f4-8be0-cc81c68d796c.mp4
 
 # Model setup
 

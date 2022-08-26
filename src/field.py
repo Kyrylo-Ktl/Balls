@@ -60,8 +60,8 @@ class Field:
             y=Config.get_random_y_coord(radius),
             vx=Config.random_x_speed,
             vy=Config.random_y_speed,
-            ax=Config.BALL_X_ACCELERATION,
-            ay=Config.BALL_Y_ACCELERATION,
+            ax=Config.random_x_acceleration,
+            ay=Config.random_y_acceleration,
             radius=radius,
             color=Config.random_color,
         )

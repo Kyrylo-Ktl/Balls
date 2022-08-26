@@ -130,9 +130,12 @@ $$totalE = \sum_{i}^{n}E_{i}$$
 
 ### System saving energy
 
+https://user-images.githubusercontent.com/93226646/186863474-69715a3a-8f6d-4458-b3b6-d6889514a388.mp4
 
 ### System losing energy
 
+https://user-images.githubusercontent.com/93226646/186863382-58fdef32-3192-4e8f-9e76-f70db6e070aa.mp4
 
 ### System gaining energy
 
+https://user-images.githubusercontent.com/93226646/186863210-092d40c5-e4c6-4702-b899-3cf6d9d49bc1.mp4

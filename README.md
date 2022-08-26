@@ -7,7 +7,9 @@ The repository contains implementations of the mathematical apparatus and visual
 - ```pip install -r requirements.txt``` - install all needed dependencies
 - ```python run.py``` - run visualization and enjoy
 
-![img](img/test.mp4)
+# Examples
+
+
 
 # Model setup
 

@@ -40,7 +40,7 @@ In order for the ball to move in time with different speeds, it is also necessar
 \
 Also, the ball needs a radius $R$ and a certain mass $m$, which will be calculated by the formula $m=\pi*R^{2}$ (square of the circle with radius $R$).
 
-![img](img/ball_representation.drawio.png)
+![ball_representation drawio](https://user-images.githubusercontent.com/93226646/186864652-6ad8a0a0-c247-40d3-a101-1cbd8792b46b.png)
 
 ## Ball moving
 
@@ -58,7 +58,7 @@ $$v_{y}=v_{y}*a_{y}$$
 
 When colliding with a wall, to reflect the ball from it, it is enough to invert the direction of movement along the corresponding axis:
 
-![img](img/wall_collision.drawio.png)
+![wall_collision drawio](https://user-images.githubusercontent.com/93226646/186864820-5f77bfa9-203a-47f3-98a9-3e518c674ba1.png)
 
 ## Balls collision
 
@@ -70,11 +70,11 @@ $$eps=10^{-3}$$
 
 $$dist+eps\leq R_{1}+R_{2}$$
 
-![img](img/overlap.drawio.png)
+![overlap drawio](https://user-images.githubusercontent.com/93226646/186865027-d56747f7-47d3-49f0-bca9-0289821e9f78.png)
 
 If the balls collided (an overlap was detected according to the formula above), then it is necessary to push the balls away from each other and recalculate the corresponding direction vectors and velocities.
 
-![img](img/ball_collision.drawio.png)
+![ball_collision drawio](https://user-images.githubusercontent.com/93226646/186864784-b60b9b7b-889e-4d94-a68a-a3367f8f8616.png)
 
 First you need to calculate the normals for the axes:
 

@@ -7,6 +7,23 @@ The repository contains implementations of the mathematical apparatus and visual
 - ```pip install -r requirements.txt``` - install all needed dependencies
 - ```python run.py``` - run visualization and enjoy
 
+# Project architecture
+
+```
+├── src
+│   ├── ball.py
+│   ├── config.py
+│   ├── field.py
+│   └── ui.py
+└── run.py
+```
+
+- `ball.py` - ball model
+- `config.py` - configuration module
+- `field.py` - field model with balls
+- `ui.py` - module with visualizations
+- `run.py` - point of entry
+
 # Examples
 
 https://user-images.githubusercontent.com/93226646/186855664-c90cfcb9-bdb0-4fff-8c15-9552903f2e2c.mp4

@@ -34,6 +34,8 @@ class Config:
     HANDLE_COLLISIONS = True
 
     FPS = 120
+    TARGET_FPS = 120
+
     BACKGROUND_COLOR = (0, 0, 0)
 
     FONT_NAME = 'arial'

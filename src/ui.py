@@ -1,6 +1,7 @@
 """Module with balls visualization"""
 
 import pygame
+import time
 
 from src.config import Config
 from src.field import ColoredBall, Field
@@ -30,8 +31,14 @@ class UI:
 
         clock = pygame.time.Clock()
 
+        prev_time = time.time()
+
         while not any(event.type == pygame.QUIT for event in pygame.event.get()):
             clock.tick(Config.FPS)
+
+            current_time = time.time()
+            dt = current_time - prev_time
+            prev_time = current_time
 
             self._window.fill(Config.BACKGROUND_COLOR)
             self.draw_balls()
@@ -39,7 +46,7 @@ class UI:
             if show_stats:
                 self.draw_energy()
 
-            self._field.move_all(time=Config.TIME_PER_DRAW)
+            self._field.move_all(time= dt * Config.TARGET_FPS)
             pygame.display.flip()
 
     def draw_balls(self):
